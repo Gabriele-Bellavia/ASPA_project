@@ -1,0 +1,11 @@
+name: aspa_project
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - r-rjags
+  - r-irkernel
+  - r-base
+  - r-coda
+  - r-tidyverse
+  - jupyterlab
