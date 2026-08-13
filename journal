@@ -1,4 +1,22 @@
-# TODO
+Annotations
 
-1. Create conda R environment 
-2. Read references and set a workflow.
+# Gabriele 13/08/2026
+
+I started off easy with data preprocessing. I created a dataframe of our dataset keeping only
+the features that i retained the most relevant. Obviously, a problem arose as always.
+While Professor suggests to work with rows in which metabolic rate is the basal metabolic rate,
+applying this constraint and removing all NA values, restrict our dataset to 279 samples.
+Altough this should not be a problem, it restricts our work only with animals that belogn to
+the class Mammalia or Aves, so our analysis will not be as general as professor asks.
+
+Probably, tomorrow I will continue the analysis with the two different dataframes: one strictly
+related to the assignment, and another with more flexibility. The last one will include animals
+whose metabolic rate is not the basal one but others (in this case we include 8 more classes).
+We will discuss about this in the next meeting because idk if these quantities are interchangeable
+somehow or they are not comparable.
+
+Next thing TODO tomorrow: understand how to treat the sampleSizeValue column. Make some tables
+with frequencies per method/class (this should be useful also for understand how general is our
+analysis with previous constraints). Start to make some plots bodymass/metab.rate,
+"explorative" regression with the two datasets.
+
