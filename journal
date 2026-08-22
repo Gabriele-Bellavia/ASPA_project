@@ -20,3 +20,32 @@ with frequencies per method/class (this should be useful also for understand how
 analysis with previous constraints). Start to make some plots bodymass/metab.rate,
 "explorative" regression with the two datasets.
 
+# Gabriele 14/08/2026
+
+sampleSizeValue is the number of individuals in the observation. I dare to say that is not as
+useful as i thought. It could be useful if we decide to aggregate more observations of the same
+species (take a weighted average). For instance, there are multiple rows with species 
+"Clethrionomys gapperi".
+
+Other thing that i noticed: it seems that some animals are underweight. I noticed it by checking 
+the maximum body mass for some species. Examples: Lama glama with 115 kg (adult weights typical 
+around 200-250) and Orycteropus afer with 48kg (typical weight around 60-80 kg). This could be 
+taken into account when we get some results (maybe lighter, and then younger, animals have 
+different metabolism).
+
+I changed one value in dataset.csv. From explorative analysis with table() method i noticed that
+there was just one row with a typo. The class was "resting metabolic rate " instead of the same
+without final space. To avoid further preprocessing I just corrected it inside the CSV.
+
+Ok. I lost. I read the assignment again and i noticed that the professor asks explicitly to
+analyze both mammals and bird together or separated. So what I was thinking yesterday was useless.
+I will continue the analysis with the first dataset keeping the extended one just in case we
+decide to extend our analysis (if we have more time or some of you desire to do more work).
+
+I finished my analysis for today. Summarizing, in the end i'm just keeping the dataset with birds
+and mammals. For the moment, i'm not taking into account the sampleSizevalue as multiple observation
+of the same sample. I made a summary statistics in which i got the number of observation per class,
+the number of non-repeated specis, the min, max, median of mass and BMR. Then i plotted the mass
+vs the BMR in log-log and did an exploratory linear regression. The results of this regression
+suggest different intercepts and slopes, thus it encourages the third model about group-dependent
+scaling i think.
